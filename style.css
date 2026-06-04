@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #E63946;
+    /* الأحمر - الأزرار والعناوين */
+    --secondary-color: #F4A261;
+    /* الذهبي - اللمسات والتفاصيل */
+    --bg-color: #FFFFFF;
+    /* الخلفية */
+    --text-color: #1D1D1D;
+    /* لون النصوص */
+    --gray-color: #F1F1F1;
+    /* خلفيات خفيفة */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header h1 {
+    background: linear-gradient(90deg, rgba(230, 57, 70, 1) 0%, rgba(244, 162, 97, 1) 81%);
+    color: transparent;
+    -webkit-background-clip: text;
+    width: fit-content;
+    font-size: 40px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: var(--bg-color);
+    transition: 2s;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+header ul li a {
+    font-size: 22px;
+    color: black;
+    text-decoration: underline;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+main {
+    padding: 10px;
+}
+
+.titre-imgs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.img {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+.vu {
+    left: 0;
+    opacity: 1;
+    z-index: 3;
+}
+
+.avant {
+    left: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.apres {
+    left: -100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.imgs {
+    width: 420px;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+    position: relative;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-text h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.home-text button {
+    width: 130px;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    transition: 1s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.home-text button:hover {
+    background-color: #b40513;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 5s;
+}
+
+.cards div {
+    height: 300px;
+    max-width: 300px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .20);
+}
+
+.cards div img {
+    height: 200px;
+    width: 250px;
+    transition: 1s;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.menu-titre h1 {
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+.cards div:hover img{
+    transform: scale(1.02 , 1.02);
+    box-shadow: 0 0 5px ;
+    filter: blur(0.5px);
+}
+#About-Us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    transition: 5s;
+    transform: translateX(-100px);
+    opacity: 0;
+}
+#About-Us img{
+    width: 500px;
+    height: 500px;
+}
+#About-Us div h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+#About-Us div h2{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+#About-Us div h3{
+    line-height: 30px;
+    font-size: 25px;
+}
+#contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:350px;
+    width:390px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+#contact div * {
+    margin: 10px;
+}
+#contact div p {
+    font-size: 20px;
+}
+footer{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: gray;
+    z-index: -100;
+}
+footer * {
+    color: white;
+    margin: 15px;
+}
+main{
+    background-color: var(--bg-color);
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    header{
+        height: 70px;
+    }
+    header h1{
+        font-size: 35px;
+    }
+    header ul {
+        width: 80%;
+    }
+
+    #About-Us {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #About-Us img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .titre-imgs {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .imgs {
+        width: 350px;
+    }
+
+    #contact {
+        gap: 30px;
+    }
+    #contact div{
+        height: 190px;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 15px;
+        height: 100px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        text-align: center;
+            margin-bottom: 10px;
+    }
+
+    #Home {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .home-text h1 {
+        font-size: 26px;
+    }
+
+    .home-text h3 {
+        font-size: 18px;
+    }
+
+    .home-text button {
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .imgs {
+        width: 300px;
+        height: 250px;
+    }
+
+    .img {
+        width: 300px;
+        height: 250px;
+    }
+
+
+    .cards {
+        grid-template-columns: repeat(4 , 250px) ;
+    }
+
+    .cards div {
+        width: 220px;
+    }
+    .cards div img{
+        width:180px ;
+        height: 180px;
+    }
+
+    #About-Us img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #About-Us div h1 {
+        font-size: 30px;
+    }
+
+    #About-Us div h2 {
+        font-size: 25px;
+    }
+
+    #About-Us div h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #contact{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #contact div {
+        width: 80%;
+        height: 250px;
+    }
+
+    footer {
+        padding: 30px 10px;
+        height: auto;
+    }
+
+    footer h1 {
+        font-size: 24px;
+    }
+
+    footer a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    header{
+        height: 120px;
+    }
+    header ul li a {
+        font-size: 19px;
+    }
+
+    .home-text h1 {
+        font-size: 22px;
+    }
+
+    .home-text h3 {
+        font-size: 16px;
+    }
+
+    .imgs {
+        width: 260px;
+        height: 200px;
+    }
+
+    .img {
+        width: 260px;
+        height: 200px;
+    }
+    #menu div  h1{
+        font-size: 30px;
+    }
+
+    #About-Us img {
+        width: 200px;
+        height: 200px;
+    }
+    #contact div h2{
+        font-size: 20px;
+    }
+       #contact div p{
+        font-size: 17px;
+    }
+}
