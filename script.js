@@ -18,13 +18,13 @@ setInterval(() => {
 }, 3000);
 let menu = [
     { img: "images/menu/pizza-margarita.jpg", titre: "Pizza Margherita", prix: "45DH" },
-    { img: "images/menu/Pizza 4 Fromages.jpg", titre: "Pizza 4 Fromages", prix: "60DH" },
-    { img: "images/menu/Burger Chicken.jpg", titre: "Burger Chicken", prix: "40DH" },
-    { img: "images/menu/Burger Classic.jpg", titre: "Burger Classic", prix: "45DH" },
-    { img: "images/menu/Sandwich Mixte.jpg", titre: "Sandwich Mixte", prix: "30DH" },
-    { img: "images/menu/Tacos poulet.jpg", titre: "Tacos poulet", prix: "30DH" },
-    { img: "images/menu/Tajine poulet.jpg", titre: "Tajine poulet", prix: "55DH" },
-    { img: "images/menu/Couscous Royal.jpg", titre: "Couscous Royal", prix: "70DH" },
+    { img: "images/menu/Pizza-4-Fromages.jpg", titre: "Pizza 4 Fromages", prix: "60DH" },
+    { img: "images/menu/Burger-Chicken.jpg", titre: "Burger Chicken", prix: "40DH" },
+    { img: "images/menu/Burger-Classic.jpg", titre: "Burger Classic", prix: "45DH" },
+    { img: "images/menu/Sandwich-Mixte.jpg", titre: "Sandwich Mixte", prix: "30DH" },
+    { img: "images/menu/Tacos-poulet.jpg", titre: "Tacos poulet", prix: "30DH" },
+    { img: "images/menu/Tajine-poulet.jpg", titre: "Tajine poulet", prix: "55DH" },
+    { img: "images/menu/Couscous-Royal.jpg", titre: "Couscous Royal", prix: "70DH" },
 ]
 let menuSort = [0, 1, 2, 3, 4, 5, 6, 7]
 let cards = document.getElementById("cards")
