@@ -23,8 +23,8 @@ onload = function () {
         { img: "images/menu/Burger-Chicken.jpg", titre: "Burger Chicken", prix: "40DH" },
         { img: "images/menu/Burger-Classic.jpg", titre: "Burger Classic", prix: "45DH" },
         { img: "images/menu/Sandwich-Mixte.jpg", titre: "Sandwich Mixte", prix: "30DH" },
-        { img: "images/menu/Tacos-poulet.jpg", titre: "Tacos poulet", prix: "30DH" },
-        { img: "images/menu/Tajine-poulet.jpg", titre: "Tajine poulet", prix: "55DH" },
+        { img: "images/menu/Tacos-Poulet.jpg", titre: "Tacos poulet", prix: "30DH" },
+        { img: "images/menu/Tajine-Poulet.jpg", titre: "Tajine poulet", prix: "55DH" },
         { img: "images/menu/Couscous-Royal.jpg", titre: "Couscous Royal", prix: "70DH" },
     ]
     let menuSort = [0, 1, 2, 3, 4, 5, 6, 7]
